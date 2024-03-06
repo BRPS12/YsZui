@@ -7,7 +7,7 @@ import { Exercises } from "./Pages/Exercises";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter future={{ v7_startTransition: true }}>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/exercises" element={<Exercises />} />

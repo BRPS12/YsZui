@@ -1,0 +1,66 @@
+.footer-container {
+  background: linear-gradient(#333, #000);
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.school-info,
+.social-media {
+  flex: 1;
+  max-width: 400px;
+}
+
+h3 {
+  color: #fff;
+}
+
+.contact-info span {
+  text-decoration: underline;
+}
+
+.social-media p {
+  margin-bottom: 10px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons > div {
+  margin: 0 10px;
+}
+
+.copyright,
+.additional-links,
+.designer-info {
+  margin-top: 20px;
+}
+
+.additional-links a {
+  color: #ffd700;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.additional-links a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+  .footer-content {
+    flex-direction: column;
+  }
+
+  .school-info,
+  .social-media {
+    max-width: none;
+  }
+}

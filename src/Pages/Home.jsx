@@ -5,56 +5,11 @@ import { useState, useEffect } from "react";
 
 export const Home = () => {
   const [isMounted, setIsMounted] = useState(false);
-  const paragraphStyle = {
-    width: "40%",
-    marginLeft: "40px",
-    fontSize: "18px",
-    fontFamily: "Georgia, sans-serif",
-    fontWeight: 400,
-    lineHeight: 1.6,
-    color: "#333",
-    boxShadow: "0 4px 8px rgba(0, 0, 0, 0.5)",
-    borderRadius: "15px",
-    background: "linear-gradient(to left,  #008EDC ,#618CFF )",
-    lineHeight: "1.4",
-  };
-  const containerStyle = {
-    width: "100%",
-    height: "60vh",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    backgroundColor: "#f8f9fa",
-  };
 
-  const paragraphStyle2 = {
-    width: "60%",
-    fontSize: "1.2rem",
-    lineHeight: "1.6",
-    fontFamily: "Georgia , sans-serif",
-  };
-
-  const imageStyle = {
-    width: "30%",
-    borderRadius: "15px",
-    marginLeft: "20px",
-    marginRight: "40px",
-  };
-  const creativity = {
-    width: "100%",
-    height: "110vh",
-    backgroundImage: `url(${require("../Images/buteelc.jpg")})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
-    alignItems: "center",
-    justifyContent: "center",
-    display: "flex",
-    flexDirection: "column",
-  };
   useEffect(() => {
     setIsMounted(true);
   }, []);
+
   return (
     <div>
       <Header
@@ -163,7 +118,7 @@ export const Home = () => {
         <div
           style={{
             maxWidth: "90%",
-            width: "1200px",
+            width: "100%",
             display: "flex",
             flexDirection: "row",
             alignItems: "center",
@@ -177,6 +132,7 @@ export const Home = () => {
               borderStyle: "solid",
               borderColor: "#FF7D23",
             }}
+            alt=""
           />
           <div style={paragraphStyle}>
             <p style={{ padding: "10px", color: "#fff" }}>
@@ -310,7 +266,6 @@ export const Home = () => {
               marginTop: "-20px",
             }}
           >
-            {" "}
             Иргэн бүр эх орон, тусгаар тогтнолын үнэ цэнийг эрхэмлэж, үнэт
             зүйлийг бүтээж, ирээдүй хойч үедээ өвлүүлэх үүрэгтэй. Мөн
             үндэснийхээ биет ба биет бус соёлын өв, үнэт зүйлс, уламжлалт зан
@@ -326,4 +281,52 @@ export const Home = () => {
       </div>
     </div>
   );
+};
+
+const paragraphStyle = {
+  width: "100%",
+  marginLeft: "10%",
+  fontSize: "18px",
+  fontFamily: "Georgia, sans-serif",
+  fontWeight: 400,
+  lineHeight: 1.6,
+  color: "#333",
+  boxShadow: "0 4px 8px rgba(0, 0, 0, 0.5)",
+  borderRadius: "15px",
+  background: "linear-gradient(to left,  #008EDC ,#618CFF )",
+  lineHeight: 1.4,
+};
+const containerStyle = {
+  width: "100%",
+  height: "60vh",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  backgroundColor: "#f8f9fa",
+};
+
+const paragraphStyle2 = {
+  width: "60%",
+  fontSize: "1.2rem",
+  lineHeight: "1.6",
+  fontFamily: "Georgia , sans-serif",
+};
+
+const imageStyle = {
+  width: "30%",
+  borderRadius: "15px",
+  marginLeft: "20px",
+  marginRight: "40px",
+};
+const creativity = {
+  width: "100%",
+  height: "110vh",
+  backgroundImage: `url(${require("../Images/buteelc.jpg")})`,
+  backgroundSize: "cover",
+  backgroundPosition: "center",
+  backgroundRepeat: "no-repeat",
+  alignItems: "center",
+  justifyContent: "center",
+  display: "flex",
+  flexDirection: "column",
 };
