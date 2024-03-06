@@ -1,0 +1,20 @@
+import "./App.css";
+import React from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Home } from "./Pages/Home";
+import { Footer } from "./components/Footer";
+import { Exercises } from "./Pages/Exercises";
+
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/exercises" element={<Exercises />} />
+      </Routes>
+      <Footer />
+    </BrowserRouter>
+  );
+}
+
+export default App;
