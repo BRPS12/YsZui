@@ -1,0 +1,39 @@
+.App {
+  display: flex;
+  flex-direction: column;
+}
+.Header {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.font {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 5vw;
+}
+.GridContainer {
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  width: 100%;
+  height: auto;
+}
+.imageCont {     
+  background: yellow;
+  height: 20vw;
+  object-fit: cover;
+  width: 27vw;
+  margin-left: 2.8vw;
+  margin-top: 5vh;
+  margin-bottom: 7vh;
+  border-radius: 20px;
+  border: 1px solid black;
+}
+
+.Footer {
+  width: 100%;
+  height: 20vh;
+  background-color: red;
+}
